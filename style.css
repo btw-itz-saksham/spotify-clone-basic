@@ -1,0 +1,413 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0;
+
+    color: white;
+    
+    overflow: hidden;
+}
+
+
+.main{
+    display: flex;
+    height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+.navbar{
+    background-color: black;
+
+    height: 65px;
+    width: 100%;
+
+}
+
+.nav{
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.nav div{
+    margin-right: 20px;
+    height:100%;
+
+}
+
+.fa-spotify {
+    font-size: 35px;
+    margin-left: 10px;
+}
+.fa-house {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.nav .search{
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .search input{
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 2rem;
+    height: 45px;
+    width: 300px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.fa-magnifying-glass{
+    color: grey;
+}
+
+.fa-box-archive{
+    color: grey;
+}
+.nav .search a{
+    color: grey;
+}
+
+.premium {
+    margin-left: auto;
+}
+
+.login{
+    background-color: white;
+    border-radius: 2rem;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login a{
+    color: black;
+    font-weight: 600;
+}
+
+
+
+.leftpannel{
+    background-color: #121212;
+    width: 420px;
+
+    position: absolute;
+
+    left: 0px;
+    top: 65px;
+    height: calc(100vh - 125px);
+
+    border-radius: 1rem;
+
+}
+
+
+.leftpannel .library{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0px 16px;
+    align-items: center;
+}
+
+.leftpannel .library .create{
+    height: 40px;
+    width:100px;
+    background-color: #1f1f1f;
+    border-radius: 2rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftpannel div{
+    margin-bottom: 20px;
+}
+
+.leftpannel .playlist,.podcast{
+    height:130px;
+    width: 98%;
+    background-color: #1f1f1f;
+    border-radius: 1rem;
+    
+}
+
+.leftpannel .playlist .playlist-text-one{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px ;
+    padding-left: 20px;
+}
+
+.leftpannel .playlist .playlist-text-two{
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 5px ;
+    padding-left: 20px;
+}
+
+.leftpannel .playlist .playlist-button{
+    height: 35px;
+    width: 145px;
+    background-color: #fff;
+    border-radius: 2rem;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.leftpannel .podcast .podcast-text-one{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 15px ;
+    padding-left: 20px;
+}
+
+.leftpannel .podcast .podcast-text-two{
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 5px ;
+    padding-left: 20px;
+}
+
+.leftpannel .podcast .podcast-button{
+    height: 35px;
+    width: 165px;
+    background-color: #fff;
+    border-radius: 2rem;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.leftpannel .playlist .playlist-button:hover,.leftpannel .podcast .podcast-button:hover{
+    background-color: rgba(255, 255, 255, 0.837);
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.leftpannel .playlist:hover,.leftpannel .podcast:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.leftpannel .copyright{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.leftpannel .copyright  div{
+    bottom: 140px;
+    left: 20px;
+    font-size: 12px;
+    color: grey;
+    line-height: 10px;
+    padding: 0px 10px;
+}
+
+.leftpannel .copyright div:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.leftpannel .copyright .cookies{
+    color:white
+}
+
+.leftpannel .language{
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+
+    font-weight: 600;
+
+    height: 35px;
+    width: 120px;
+
+    border: 1px  solid rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftpannel .language:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+}
+
+.maincontent{
+    background: linear-gradient(to bottom,#1f1f1f,#121212);
+    width:840px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    position: absolute;
+
+    left: 420px;
+    top: 65px;
+    height: calc(100vh - 125px);
+
+    border-radius: 1rem;
+}
+
+.maincontent ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
+.maincontent h2{
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 15px ;
+    padding-left: 20px;
+}
+
+.maincontent img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.maincontent h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.maincontent h5{
+    font-size: 12px;
+    font-weight: 600;
+    color: darkgrey;
+    padding-top: 5px;
+}
+
+.artist-section{
+    margin-top: 20px;
+}
+
+.artist-section img{
+    border-radius: 100%;
+}
+
+
+
+.rightpannel{
+    background-color: #121212;
+
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    width: 280px;
+    height: calc(100vh - 125px);
+
+    border-radius: 1rem;
+}
+
+.rightpannel h1{
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-align: center;
+
+    position: absolute;
+    left: 20px;
+    top: 250px;
+}
+
+.rightpannel button{
+    height: 40px;
+    width: 100px;
+    background-color: #24ba3a;
+    border-radius: 2rem;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+    position: absolute;
+    left: 100px;
+    bottom: 230px;
+}
+
+
+.bottombar {
+    background: linear-gradient(to right, #c22ba0, #7b5bd6, #4d9bf5);
+
+    position: fixed;
+    bottom: 0px;
+
+
+    width: 100%;
+    height: 60px;
+
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    padding: 10px 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottombar .preview-text p:first-child {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.bottombar .preview-text p:last-child {
+    font-size: 16px;
+}
+
+.bottombar .signup-button {
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 2rem;
+
+    height: 52px;
+    padding: 0 32px;
+
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
