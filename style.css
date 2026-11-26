@@ -6,7 +6,7 @@
 
     margin: 0;
 
-    color: white;
+    color: rgb(255, 255, 255);
     
     overflow: hidden;
 }
@@ -15,7 +15,8 @@
 .main{
     display: flex;
     height: 100vh;
-
+    border-radius: 0;
+    
 }
 
 a{
@@ -117,7 +118,7 @@ a{
     top: 65px;
     height: calc(100vh - 125px);
 
-    border-radius: 1rem;
+    border-radius: 0;
 
 }
 
@@ -279,7 +280,8 @@ a{
     top: 65px;
     height: calc(100vh - 125px);
 
-    border-radius: 1rem;
+    border-radius: 0rem;
+    
 }
 
 .maincontent ul{
@@ -287,6 +289,7 @@ a{
     justify-content: space-around;
     padding: 0px 20px;
     margin-top: 10px;
+    gap: 10px;
 }
 
 .maincontent h2{
@@ -336,7 +339,7 @@ a{
     width: 280px;
     height: calc(100vh - 125px);
 
-    border-radius: 1rem;
+    border-radius: 0rem;
 }
 
 .rightpannel h1{
@@ -378,7 +381,7 @@ a{
     width: 100%;
     height: 60px;
 
-    border-radius: 0.5rem;
+    border-radius: 0rem;
     box-sizing: border-box;
     padding: 10px 16px;
 
